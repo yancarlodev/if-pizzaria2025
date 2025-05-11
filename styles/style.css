@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+:root {
+    --primary-color: #CD212A;
+    --secondary-color: #008C45;
+    --text-color: #333;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#home {
+    height: 350px;
+    background-image: url("../img/pexels-eneida-nieves-905847.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    padding: 24px;
+    background-color: rgba(51, 51, 51, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.hero > p, .hero > h1, .hero > a {
+    color: white;
+}
+
+h1 > span:first-child {
+    color: var(--secondary-color);
+}
+
+h1 > span:last-child {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+
+.hero > h1, .hero > p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+#menu > h2 {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 600;
+}
+
+.menu-list {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+nav > ul {
+    display: flex;
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li {
+    padding: 16px;
+}
+
+nav > ul > li:hover {
+    background-color: var(--secondary-color);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu-list > li > h3 {
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 300;
+}
+
+.menu-list > li > h3 {
+    margin: 8px 0 8px 0;
+}
+
+.menu-list > li > p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu-list > li > img {
+    width: 100%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    height: 280px;
+    margin-top: 12px;
+    background-color: var(--primary-color);
+}
+
+#about > h2, #contact > h2 {
+    font-family: "Playwrite DK Loopet", cursive;
+    margin-bottom: 16px;
+}
+
+#about > * {
+    color: white
+}
+
+#contact {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact > p {
+    margin-bottom: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    background-color: var(--primary-color);
+}
+
+footer > p {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
